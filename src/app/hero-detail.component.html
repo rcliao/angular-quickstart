@@ -1,0 +1,9 @@
+  <section *ngIf="hero">
+    <h2>{{hero.name}} details</h2>
+    <div>id: {{hero.id}}</div>
+    <div>
+      <label for="name">name:</label>
+      <input type="text" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <button (click)="goBack()">Back</button>
+  </section>
